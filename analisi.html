@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <nav class="bg-gray-800 p-4">
+      <ul class="flex justify-around">
+        <li><a href="./logotip.html" class="text-white">Logotip</a></li>
+        <li><a href="./fotografia.html" class="text-white">Fotografia</a></li>
+        <li><a href="./paisatge.html" class="text-white">Paisatge</a></li>
+        <li><a href="./degradat.html" class="text-white">Degradat</a></li>
+        <li><a href="./analisi.html" class="text-white">Anàlisi</a></li>
+      </ul>
+    </nav>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"
+    >
+      <div>
+        <h2 class="text-center text-2xl mb-8">Logotip</h2>
+
+        <h3 class="ml-4 text-xl">Quin format és el més òptim per aquest tipus d’imatge i per què?</h3>
+        <p class="mt-4 ml-4 text-blue-700">El més optim seria el PNG, ja que és un format de compressió sense pèrdua, per tant, no es perd qualitat en la imatge.</p>
+        <p class="ml-4 text-blue-700">A més, el PNG és un format que permet la transparència, cosa que pot ser útil al logotip del Drive.</p>
+
+        <h3 class="ml-4 mt-4 text-xl">Es podria reduir encara més la mida?</h3>
+        <p class="ml-4 text-blue-700">Sí, es podria reduir la mida de la imatge, però això implicaria una pèrdua de qualitat.</p>
+
+        <h3 class="ml-4 mt-4 text-xl">Perdria qualitat?</h3>
+        <p class="ml-4 text-blue-700">Sí, perdria qualitat, ja que la imatge es comprimiria més i es perdria informació.</p>
+      </div>
+      <div>
+        <h2 class="text-center text-2xl mb-8">Fotografia i Paisatge</h2>
+
+        <h3 class="ml-4 text-xl">Quin format és el més òptim per aquest tipus d’imatge i per què?</h3>
+        <p class="mt-4 ml-4 text-blue-700">El millor format per a aquest tipus d'imatge seria el JPEG, ja que, per molt que sigui un format de compressió amb pèrdua, permet reduir la mida de la imatge i l'espai que ocupa sense quasi perdre qualitat visible.</p>
+
+        <h3 class="ml-4 mt-4 text-xl">Amb quin nivell de compressió no es perd qualitat visible?</h3>
+        <p class="ml-4 text-blue-700">Amb un nivell de compressió baix, com un 90%, no es perd qualitat visible.</p>
+
+        <h3 class="ml-4 mt-4 text-xl">Podem reduir la mida encara més sense perdre qualitat?</h3>
+        <p class="ml-4 text-blue-700">Es podria reduir molt poc, ja que esta imatge ja està molt comprimida.</p>
+
+        <h3 class="ml-4 mt-4 text-xl">Què passaria si desem la imatge diverses vegades en format JPEG?</h3>
+        <p class="ml-4 text-blue-700">La imatge es comprimiria diverses vegades, i es perdria qualitat en cada compressió.</p>
+      </div>
+      <div>
+        <h1 class="text-center text-2xl mb-8">Imatge amb Transparència</h1>
+
+        <h3 class="ml-4 mt-4 text-xl">Quin és el format més òptim per aquest tipus d’imatge i per què?</h3>
+        <p class="ml-4 text-blue-700">El format més òptim seria el PNG, ja que és un format de compressió sense pèrdua, i permet la transparència, cosa que JPEG o GIF, no permet.</p>
+
+        <h3 class="ml-4 mt-4 text-xl">Què passa quan la guardem en format JPEG?</h3>
+        <p class="ml-4 text-blue-700">La imatge perd la transparència i l'espai on hi habia la transparència, es va opacant gradualment.</p>
+
+        <h3 class="ml-4 mt-4 text-xl">Si la nostra web té un fons blanc, quin format seria el més òptim i per què?</h3>
+        <p class="ml-4 text-blue-700">Seria el PNG, ja que permet la transparència i així la imatge conservaria el color </p>
+      </div>
+    </main>
+    <h1 class="text-center text-2xl mb-8">DeveloperTools - Lighthouse</h1>
+    <a href="./lighthouse.html" class="bg-blue-500 text-black block mx-auto text-center py-2 px-4 rounded w-1/4 text-white">Lighthouse</a>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+    <div>
+      <h3 class="ml-4 mt-4 text-xl">Què t'indica Lighthouse sobre el rendiment d'imatges de les teves pàgines?</h3>
+      <p class="ml-4 text-blue-700">Indica una puntuació total de 92.</p>
+    </div>
+
+    <div>
+      <h3 class="ml-4 mt-4 text-xl">Quins són els principals problemes?</h3>
+      <p class="ml-4 text-blue-700">Totes les métriques són la puntuació máxima menys la métrica de "Major contingut de pintura".</p>
+    </div>
+
+    <div>
+      <h3 class="ml-4 mt-4 text-xl">Quines recomanacions ofereix?</h3>
+      <p class="ml-4 text-blue-700"><strong>Ofereix varies, pero la que més resalta és: </strong></p>
+      <p class="ml-4 text-blue-700">"Els formats d'imatge com WebP i AVIF solen oferir millor compressió que PNG o JPEG, la qual cosa es tradueix en descàrregues més ràpides i menor consum de dades."</p>
+    </div>
+
+    <div>
+      <h3 class="ml-4 mt-4 text-xl">Simula una connexió lenta 3G i analitza la càrrega de les imatges. Què observes?</h3>
+      <img src="images/simulacio3g.png" alt="Simulacio 3G" class="w-full" />
+      <p class="ml-4 text-blue-700">Observem que la carrega d'imatges, <strong>depenent del format</strong>, es molt lenta.</p>
+      <p class="ml-4 text-blue-700">Podrem veure diferents ordres, pero en general, <strong>totes superen els 2 segons.</strong></p>
+    </div>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
